@@ -157,8 +157,8 @@ body {
 }
 
 .body .questions h3 {
-    margin-bottom: 24px;
-    font-size: 24px;
+  margin-bottom: 24px;
+  font-size: 24px;
 }
 
 .body .questions .question .answer-choice {
@@ -167,9 +167,9 @@ body {
 }
 
 .body .questions .question label {
-    margin-left: 8px;
-    font-weight: 700;
-    color: #505050;
+  margin-left: 8px;
+  font-weight: 700;
+  color: #505050;
 }
 
 .body .questions form input {
@@ -177,15 +177,15 @@ body {
 }
 
 .body .submit {
-    width: 100%;
-    margin-left: auto;
-    padding: 16px 0;
-    font-size: 24px;
-    font-weight: 700;
-    border: none;
-    border-radius: 8px;
-    background-color: #aad8f3;
-    color: #00629b;
+  width: 100%;
+  margin-left: auto;
+  padding: 16px 0;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  background-color: #aad8f3;
+  color: #00629b;
 }
 
 .body .submit:hover {
@@ -237,15 +237,28 @@ body {
     margin: 0;
     padding: 0 24px 16px;
   }
-}
 
-@media only screen and (max-width: 400px) {
-.header .links {
-  flex-direction: column;
-}
+  .body #suicidal-thoughts {
+    padding: 20px;
+  }
 
   .body .questions {
     width: 100%;
   }
+
+  .body .card {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .card .context {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
+@media only screen and (max-width: 400px) {
+  .header .links {
+    flex-direction: column;
+  }
+}
