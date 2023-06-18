@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 32px;
+  background-color: #bb98ce;
+}
+
+.header .heading-main {
+  left: 0;
+  padding: 8px 24px;
+  border-right: 1px solid #000;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+}
+
+.header .links {
+  display: flex;
+  margin-left: auto;
+  margin-right: 24px;
+  gap: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+.header .link {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #944bbb;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffd6fd;
+}
+
+/* Body */
+.body {
+  margin: auto;
+}
+
+.body #suicidal-thoughts {
+  width: 1080px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.body .heading {
+  margin: 48px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.01rem;
+  color: #075000;
+}
+
+.body .heading2 {
+  margin: 64px 0 32px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.01rem;
+  color: #000;
+}
+
+.body .context {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  line-height: 180%;
+  color: #666666;
+}
+
+.body .img {
+  margin: 40px 0;
+}
+
+.body .list {
+  margin: 0 40px;
+  counter-reset: li;
+}
+
+.body .list li {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.body .list li::marker {
+  color: #000;
+}
+
+.body .card {
+  margin-top: 40px;
+  padding: 24px 40px 40px;
+  border-radius: 32px;
+  background-color: #c5afd1;
+}
+
+.body .card .context {
+  font-size: 32px;
+}
+
+.body .card p a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #004603;
+}
+
+.body .card .list .context a {
+  font-weight: 700;
+  color: #004603;
+}
+
+.body .heading-box {
+  width: 100%;
+  margin-top: 200px;
+  padding: 40px;
+  background-color: #aad8f3;
+}
+
+.body .heading-box .heading3 {
+  width: 1080px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #00629b;
+}
+
+.body .main-box {
+  width: 1080px;
+  margin: auto;
+  padding: 40px;
+}
+
+.body .questions {
+  width: 400px;
+  margin: auto;
+  padding: 40px;
+  border: 4px solid #aad8f3;
+}
+
+.body .questions form {
+  font-family: "Montserrat", sans-serif;
+}
+
+.body .questions .question {
+  margin-bottom: 40px;
+}
+
+.body .questions h3 {
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+.body .questions .question .answer-choice {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.body .questions .question label {
+    margin-left: 8px;
+    font-weight: 700;
+    color: #505050;
+}
+
+.body .questions form input {
+  transform: scale(1.4);
+}
+
+.body .submit {
+    width: 100%;
+    margin-left: auto;
+    padding: 16px 0;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    background-color: #aad8f3;
+    color: #00629b;
+}
+
+.body .submit:hover {
+  background-color: #76cdff;
+  color: #004a75;
+}
+
+.body .result {
+  text-align: center;
+  width: 480px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 24px 24px 24px 0;
+  background-color: #00b6b6;
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1080px) {
+  .body #suicidal-thoughts {
+    width: 100%;
+  }
+
+  .body .heading-box .heading3 {
+    width: 100%;
+  }
+
+  .body .main-box {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+  }
+
+  .header .heading-main {
+    padding: 24px;
+    border: none;
+    font-size: 32px;
+  }
+
+  .header .links {
+    margin: 0;
+    padding: 0 24px 16px;
+  }
+}
