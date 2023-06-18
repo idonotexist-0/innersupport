@@ -241,6 +241,10 @@ body {
     padding: 20px;
   }
 
+  .body .main-box .result {
+    width: 100%;
+  }
+
   .body #suicidal-thoughts {
     padding: 20px;
   }
